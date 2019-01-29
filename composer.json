@@ -1,0 +1,26 @@
+{
+	"name": "pcrt/yii2-latex",
+	"description": "Yii Latex2PDF formatting",
+	"keywords": ["yii", "yii2", "pdf", "response", "formatter", "reports", "documents", "latex"],
+	"license": "BSD-3-Clause",
+	"version": "0.9.7",
+	"minimum-stability":"stable",
+	"authors": [
+		{
+			"name": "fr00ller",
+			"email": "marco@bhima.eu",
+			"homepage": "https://www.protocollicreativi.it",
+			"role": "Author"
+		}
+	],
+	"require": {
+		"php": ">=5.6.0",
+		"yiisoft/yii2": ">2.0.0",
+		"symfony/process": ">4.0.1"
+	},
+	"autoload": {
+		"psr-4": {
+			"pcrt\\latex\\": ""
+		}
+	}
+}
