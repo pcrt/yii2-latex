@@ -63,10 +63,10 @@ class Latex2PdfResponseFormatter extends Component implements ResponseFormatterI
 			$this->build_path = getcwd().DIRECTORY_SEPARATOR;
 		}
 
-		$tmpfile_path = $this->build_path.$tmpfile_name;
-		$logfile_path = $this->build_path.$tmpfile_name.".log";
-		$auxfile_path = $this->build_path.$tmpfile_name.".aux";
-		$pdffile_path = $this->build_path.$tmpfile_name.".pdf";
+		$tmpfile_path = $this->build_path.'/'.$tmpfile_name;
+		$logfile_path = $this->build_path.'/'.$tmpfile_name.".log";
+		$auxfile_path = $this->build_path.'/'.$tmpfile_name.".aux";
+		$pdffile_path = $this->build_path.'/'.$tmpfile_name.".pdf";
 
 		// Write temp file
 		$fp = fopen($tmpfile_path, 'w+');
