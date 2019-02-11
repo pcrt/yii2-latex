@@ -36,7 +36,7 @@ return [
 				'pdf' => [
 					'class' => 'pcrt\latex\Latex2PdfResponseFormatter',
 					'latexbin' => '/usr/local/bin/latex',
-					'build_path' => '/folder/you/prefer'
+					'buildpath' => '/folder/you/prefer'
  				],
 			]
 		],

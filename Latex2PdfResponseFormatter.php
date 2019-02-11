@@ -63,10 +63,10 @@ class Latex2PdfResponseFormatter extends Component implements ResponseFormatterI
 			$this->build_path = getcwd().DIRECTORY_SEPARATOR;
 		}
 
-		$tmpfile_path = $this->build_path.'/'.$tmpfile_name;
-		$logfile_path = $this->build_path.'/'.$tmpfile_name.".log";
-		$auxfile_path = $this->build_path.'/'.$tmpfile_name.".aux";
-		$pdffile_path = $this->build_path.'/'.$tmpfile_name.".pdf";
+		$tmpfile_path = realpath($this->build_path.DIRECTORY_SEPARATOR.$tmpfile_name);
+		$logfile_path = realpath($this->build_path.DIRECTORY_SEPARATOR.$tmpfile_name.".log");
+		$auxfile_path = realpath($this->build_path.DIRECTORY_SEPARATOR.$tmpfile_name.".aux");
+		$pdffile_path = realpath($this->build_path.DIRECTORY_SEPARATOR.$tmpfile_name.".pdf");
 
 		// Write temp file
 		$fp = fopen($tmpfile_path, 'w+');
@@ -88,14 +88,14 @@ class Latex2PdfResponseFormatter extends Component implements ResponseFormatterI
 		$process->run();
 
 		if (!$process->isSuccessful()) {
-			unlink($logfile_path);
-			unlink($auxfile_path);
-			unlink($tmpfile_path);
+			@unlink($logfile_path);
+			@unlink($auxfile_path);
+			@unlink($tmpfile_path);
     	throw new ProcessFailedException($process);
 		}else{
-			unlink($logfile_path);
-			unlink($auxfile_path);
-			unlink($tmpfile_path);
+			@unlink($logfile_path);
+			@unlink($auxfile_path);
+			@unlink($tmpfile_path);
 			if(file_exists($pdffile_path)){
 				$pdf = file_get_contents($pdffile_path);
 				unlink($pdffile_path);
