@@ -3,7 +3,7 @@
 	"description": "Yii Latex2PDF formatting",
 	"keywords": ["yii", "yii2", "pdf", "response", "formatter", "reports", "documents", "latex"],
 	"license": "BSD-3-Clause",
-	"version": "0.9.7",
+	"version": "0.9.8",
 	"minimum-stability":"stable",
 	"authors": [
 		{
