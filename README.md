@@ -35,8 +35,9 @@ return [
 			'formatters' => [
 				'pdf' => [
 					'class' => 'pcrt\latex\Latex2PdfResponseFormatter',
-					'latexbin' => '/usr/local/bin/latex',
-					'buildpath' => '/folder/you/prefer'
+					'latexbin' => '/usr/local/bin/pdflatex',
+					'buildpath' => '/folder/you/prefer' // for default use current folder
+					'keepfile' => false // if true not clean debug file ( debug purpose only )
  				],
 			]
 		],
