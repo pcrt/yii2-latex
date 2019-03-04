@@ -1,18 +1,22 @@
 {
 	"name": "pcrt/yii2-latex",
-	"description": "Yii Latex2PDF formatting",
-	"keywords": ["yii", "yii2", "pdf", "response", "formatter", "reports", "documents", "latex"],
+	"type": "library",
+	"description": "Alternative Gii generator for Yii2 framework",
+	"keywords": ["yii2", "report", "latex" ],
 	"license": "BSD-3-Clause",
 	"version": "1.0.3",
-	"minimum-stability":"stable",
 	"authors": [
 		{
-			"name": "fr00ller",
-			"email": "marco@bhima.eu",
-			"homepage": "https://www.protocollicreativi.it",
-			"role": "Author"
+			"name": "Marco Petrini",
+			"email": "info@protocollicreativi.it",
+			"homepage": "http://www.protocollicreativi.it"
 		}
 	],
+	"minimum-stability": "stable",
+	"support": {
+		"source": "https://github.com/pcrt/yii2-latex",
+		"issues": "https://github.com/pcrt/yii2-latex/issues"
+	},
 	"require": {
 		"php": ">=5.6.0",
 		"yiisoft/yii2": ">2.0.0",
@@ -20,7 +24,7 @@
 	},
 	"autoload": {
 		"psr-4": {
-			"pcrt\\latex\\": ""
+			"pcrt\\": ""
 		}
 	}
 }
