@@ -4,7 +4,7 @@
 	"description": "Alternative Gii generator for Yii2 framework",
 	"keywords": ["yii2", "report", "latex" ],
 	"license": "BSD-3-Clause",
-	"version": "1.0.7",
+	"version": "1.0.9",
 	"authors": [
 		{
 			"name": "Marco Petrini",
