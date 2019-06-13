@@ -4,7 +4,7 @@
 	"description": "Alternative Gii generator for Yii2 framework",
 	"keywords": ["yii2", "report", "latex" ],
 	"license": "BSD-3-Clause",
-	"version": "1.0.9",
+	"version": "1.0.10",
 	"authors": [
 		{
 			"name": "Marco Petrini",
@@ -20,7 +20,7 @@
 	"require": {
 		"php": ">=5.6.0",
 		"yiisoft/yii2": ">2.0.0",
-		"symfony/process": "@dev"
+		"symfony/process": ">=4.3.1"
 	},
 	"autoload": {
 		"psr-4": {
