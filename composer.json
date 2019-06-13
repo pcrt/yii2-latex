@@ -3,7 +3,7 @@
 	"description": "Yii Latex2PDF formatting",
 	"keywords": ["yii", "yii2", "pdf", "response", "formatter", "reports", "documents", "latex"],
 	"license": "BSD-3-Clause",
-	"version": "1.0.2",
+	"version": "1.0.3",
 	"minimum-stability":"stable",
 	"authors": [
 		{
@@ -16,7 +16,7 @@
 	"require": {
 		"php": ">=5.6.0",
 		"yiisoft/yii2": ">2.0.0",
-		"symfony/process": ">4.0.1"
+		"symfony/process": "*"
 	},
 	"autoload": {
 		"psr-4": {
