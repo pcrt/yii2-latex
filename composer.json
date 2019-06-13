@@ -4,7 +4,7 @@
 	"description": "Alternative Gii generator for Yii2 framework",
 	"keywords": ["yii2", "report", "latex" ],
 	"license": "BSD-3-Clause",
-	"version": "1.0.15",
+	"version": "1.0.17",
 	"authors": [
 		{
 			"name": "Marco Petrini",
@@ -12,7 +12,7 @@
 			"homepage": "http://www.protocollicreativi.it"
 		}
 	],
-	"minimum-stability": "dev",
+	"minimum-stability": "stable",
 	"support": {
 		"source": "https://github.com/pcrt/yii2-latex",
 		"issues": "https://github.com/pcrt/yii2-latex/issues"
