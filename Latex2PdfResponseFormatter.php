@@ -123,7 +123,7 @@ class Latex2PdfResponseFormatter extends Component implements ResponseFormatterI
         $process->run();
 
         if (!$process->isSuccessful()) {
-            throw new ProcessFailedException($process);
+            //throw new ProcessFailedException($process);
             Yii::trace($process->getOutput());
         }
 
